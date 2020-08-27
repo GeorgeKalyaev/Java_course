@@ -55,6 +55,53 @@ public class main {
                 Task_10 myClassObject_10 = new Task_10();
                 myClassObject_10.Task_10_myFancyMethod();
                 break;
+            case 11:
+                //Необходимо произвести ввод строки с клавиатуры и записать в строковую переменную. Результат вывести на экран.
+                Task_11 myClassObject_11 = new Task_11();
+                myClassObject_11.Task_11_myFancyMethod();
+                break;
+            case 12:
+                //Для введенной с клавиатуры строки необходимо провести отсев пробелов. Результат в виде строки без пробелов вывести на экран.
+                Task_12 myClassObject_12 = new Task_12();
+                myClassObject_12.Task_12_myFancyMethod();
+                break;
+            case 13:
+                //Необходимо провести сравнение длины двух строк, которые были введены с клавиатуры и записаны в соответствующие переменные. Вывести на экран строку с наибольшей длиной. Если длины равны, вывести соответствующее сообщение.
+                Task_13 myClassObject_13 = new Task_13();
+                myClassObject_13.Task_13_myFancyMethod();
+                break;
+            case 14:
+                Task_14 myClassObject_14 = new Task_14();
+                myClassObject_14.Task_14_myFancyMethod();
+                break;
+            case 15:
+                Task_15 myClassObject_15 = new Task_15();
+                myClassObject_15.Task_15_myFancyMethod();
+                break;
+            case 16:
+                Task_16 myClassObject_16 = new Task_16();
+                myClassObject_16.Task_16_myFancyMethod();
+                break;
+            case 17:
+                Task_17 myClassObject_17 = new Task_17();
+                myClassObject_17.Task_17_myFancyMethod();
+                break;
+            case 18:
+                Task_18 myClassObject_18 = new Task_18();
+                myClassObject_18.Task_18_myFancyMethod();
+                break;
+            case 19:
+                Big_task_1 myClassObject_ВIG_1 = new Big_task_1();
+                myClassObject_ВIG_1.Big_task_1_myFancyMethod();
+                break;
+            case 20:
+                Big_task_2 myClassObject_ВIG_2 = new Big_task_2();
+                myClassObject_ВIG_2.Big_task_2_myFancyMethod();
+                break;
+            case 21:
+                Big_task_3 myClassObject_ВIG_3 = new Big_task_3();
+                myClassObject_ВIG_3.Big_task_3_myFancyMethod();
+                break;
             default:
                 value = 0;
         }
