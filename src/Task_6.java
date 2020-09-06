@@ -8,11 +8,9 @@ public class Task_6 {
         System.out.println("Введите первое число");
         int X = name_scaner.nextInt();
         //int X = Integer.parseInt(one);
-
         System.out.println("Введите второе число");
         int Y = name_scaner.nextInt();
         //int Y = Integer.parseInt(one);
-
         System.out.println("Введите третье число");
         int Z = name_scaner.nextInt();
         //int Z = Integer.parseInt(one);
@@ -31,7 +29,7 @@ public class Task_6 {
 
         int qwerty = Integer.parseInt(splitResult);
 
-        if (qwerty > 3){
+        if (qwerty >= 3){
             System.out.println("Программа выполнена корректно");
         }
 
