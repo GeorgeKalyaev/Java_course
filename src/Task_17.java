@@ -3,45 +3,22 @@ import java.util.Scanner;
 
 public class Task_17 {
     public void Task_17_myFancyMethod() {
-        File log = new File("C:\\qwerty.txt");
+        String str;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("признак ввода стоп - stop");
 
-        try{
-          //  while (X != 1997){
+        try(FileWriter fw = new FileWriter("test.txt"))
+        {
+            do {
+                System.out.print(": ");
+                str = br.readLine();
 
-            while (true){
-                Scanner name_scaner = new Scanner(System.in);
-                System.out.println("Введите число");
-                int X = name_scaner.nextInt();
-
-                if (X != 1997){
-                    PrintWriter out = new PrintWriter(new FileWriter(log, true));
-                    out.append(" efwefewf wefewf" + "\n");
-                   out.close();
-                }else {
-                    PrintWriter out = new PrintWriter(new FileWriter(log, true));
-                   // out.append(X + "\n");
-                    out.close();
-                }
-            }
-
-
-           /* do {
-                Scanner name_scaner = new Scanner(System.in);
-                System.out.println("Введите число");
-                int X = name_scaner.nextInt();
-
-                if (X == 1997){
-                    PrintWriter out = new PrintWriter(new FileWriter(log, true));
-                   // out.append(X + "\n");
-                    out.close();
-                }
-            }while (){
-
-            }*/
-
-
-        }catch(IOException e){
-            System.out.println("COULD NOT LOG!!");
+                if (str.compareTo("stop") == 0) break;
+                str = str + "\r\n";
+                fw.write(str);
+            } while (str.compareTo("stop") != 0);
+        }catch (IOException exc){
+            System.out.println("Ошибка ввода-вывода " + exc);
         }
     }
 }
