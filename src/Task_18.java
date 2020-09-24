@@ -1,43 +1,33 @@
 import java.io.*;
-import java.util.Formatter;
 import java.util.Scanner;
 
-//import static org.graalvm.compiler.nodes.extended.StoreHubNode.write;
-
-//Необходимо написать программу, которая будет выводить на экран текстовые данные из файла .txt,
-//а потом в этот же файл перезаписывать текстовые данные, введенные вручную.
-//Количество строк после перезаписи должно быть столько же, сколько и в изначальном варианте.
 public class Task_18 {
-   // private static String fileName = "D:\\qwerty.txt";
    int lines;
    int qwerty = 0;
-
     public void Task_18_myFancyMethod() {
         try {
             File file = new File("D:\\qwerty.txt");
             Scanner scanner = new Scanner(file);
-
             Scanner scanner2 = new Scanner(System.in);
 
             while (scanner.hasNextLine()) {
-
                 lines++;
                 String[] array = scanner.nextLine().split(" ");
 
                 for(int i=0; i < array.length; i++) {
-                    System.out.println( array[i] );
+                    System.out.println(array[i]);
                 }
-
             }
+
             //Вводим данные для перезаписи
             System.out.println("Введите то, что хотите записать в файл: ");
-
             String[] text = new String[lines];
 
             while (qwerty != lines) {
                 text[qwerty] = scanner2.nextLine();
                 qwerty++;
             }
+
             File file2 = new File("D:\\qwerty.txt");
             try{
                 //PrintWriter обеспечит возможности записи в файл
